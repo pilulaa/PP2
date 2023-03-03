@@ -9,7 +9,7 @@ with open("sample-data.json", "r") as read:
     print("--------------------------------------------------   --------------------      ------      ------")
 
     for i in range(18):
-        for a, b in data["imdata"][s]['l1PhysIf']["attributes"].items():
+        for a, b in data["imdata"][i]['l1PhysIf']["attributes"].items():
             if a == 'dn':
                 print(b, end="                                    ")
             if a == "mtu":
