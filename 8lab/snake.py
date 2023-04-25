@@ -17,7 +17,6 @@ black = pygame.Color(0, 0, 0)
 white = pygame.Color(255, 255, 255)
 red = pygame.Color(255, 0, 0)
 green = pygame.Color(0, 255, 0)
-
 #Setting up game window
 pygame.display.set_caption('Snake')
 game_window = pygame.display.set_mode((window_x, window_y))
@@ -59,8 +58,7 @@ def game_over():
 	my_font = pygame.font.SysFont('times new roman', 50)
 	
 	#Creating a text surface on which text will be drawn
-	game_over_surface = my_font.render(
-		'Your Score is : ' + str(score) , True, red)
+	game_over_surface = my_font.render('Your Score is : ' + str(score) , True, red)
 	game_over_surface2 = my_font.render('Your level is : ' + str(level), True, red )
 	
 	#Create a rectangular object for the text
